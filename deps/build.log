@@ -1,0 +1,17 @@
+rm -f *.o src/parser_*.o tree-sitter/lib/src/lib.o libmylang-parser.dylib
+make: *** No rule to make target `*.o', needed by `libmylang-parser.dylib'.  Stop.
+[ Info: Changing directory to /Users/nathan.daly/.julia/dev/TreeSitter/deps
+ERROR: LoadError: failed process: Process(`make clean all`, ProcessExited(2)) [2]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:813 [inlined]
+ [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+ [3] run(::Cmd) at ./process.jl:726
+ [4] run(::BinDeps.SynchronousStepCollection) at /Users/nathan.daly/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521
+ [5] top-level scope at /Users/nathan.daly/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:311
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1094
+ [8] include(::Module, ::String) at ./Base.jl:31
+ [9] include(::String) at ./client.jl:431
+ [10] top-level scope at none:5
+in expression starting at /Users/nathan.daly/.julia/dev/TreeSitter/deps/build.jl:4
