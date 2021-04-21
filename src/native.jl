@@ -6,8 +6,8 @@ This is a modified version of the Clang.jl generated code for the tree-sitter
 API. The generated code is not entirely correct, so some modifications were
 needed. Those edits are clarified with a comment to make future updates easy.
 """
-
-const ts_lib = "$(deps/libmylang-parser.$(Libdl.dlext)"
+const DEPS = "$(@__DIR__)/../deps"
+const ts_lib = "$(DEPS)/libmylang-parser.$(Libdl.dlext)"
 const C99bool_t = Cuchar
 
 import CEnum: @cenum
