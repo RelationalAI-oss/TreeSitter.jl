@@ -4,7 +4,7 @@ If you want to change the parser grammar, some work has to be done manually:
 2. Include the tree-sitter binary into your $PATH
 3. Implement your changes in the Grammar, i.e., in mylang.js
 4. call generate.sh under its directory
-5. Rebuild Julia.
+5. Rebuild the project in Julia (`Pkg.build()`)
 
 
 Notes:
